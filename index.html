@@ -1,0 +1,518 @@
+ <!DOCTYPE html>
+<html >
+<head>
+	<title>BAT Cloud Automation</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/icon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main02.css">
+<!--===============================================================================================-->
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="hide-show-fields-form.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ 
+ 
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="https://igniteui.com/js/modernizr.min.js"></script>
+
+
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/infragistics.core.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/infragistics.lob.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_core.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collections.js"></script>
+
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_text.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_io.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_ui.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.documents.core_core.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collectionsextended.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.excel_core.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_threading.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_web.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.xml.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.documents.core_openxml.js"></script>
+<script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.excel_serialization_openxml.js"></script>
+<link href="https://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="https://cdn-na.infragistics.com/igniteui/latest/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="cost.js"></script>
+	
+
+
+   
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+ 
+ 
+
+
+</head>
+<body>
+
+	<div class="topnav2">
+		<ul id="head012">
+			<li><a  class="active" href="#home">Home</a></li>
+			<li><a target="_blank" href="https://bat.sharepoint.com/sites/CloudAutomationPublic">Our Cloud Services</a></li>
+			
+			<li><a target="_blank" href="https://bat.sharepoint.com/sites/CloudAutomationPublic/SitePages/About.aspx">About Cloud Team</a></li>
+			<li><a target="_blank" href="#contact">Contact us</a></li>
+			<li><a target="_blank" href="https://azure.microsoft.com/en-us/pricing/calculator/">Pricing</a></li>
+		 </ul>
+		
+		
+	 </div>
+	 <img class="icon" src="icon.png"></img>
+	 
+	 <div id="overlay" ">
+		<div id="loader"></div>
+		<div style="display:none;" id="myDiv"  >
+			<h2>Done!</h2>
+			<p22  id="SuccessStatus" style="background-color: black;">Your request submitted successfully!</p22>
+   
+		  </div>
+	 </div>
+	 
+
+
+	 
+	 <div   >
+		
+	 
+	
+	 <div class="container-contact2">
+		<div class="wrap-contact2" id="wrap"
+
+		<form class="contact2-form validate-form" action="/action_page.php">
+			<div id = "RequestHere">
+		   <span class="contact2-form-title">
+
+			<h1 class="ml1">
+				<span class="text-wrapper">
+				  <span class="line line1"></span>
+				  <span class="letters">Request For Cloud Infrastructure Here!</span>
+				  <span class="line line2"></span>
+				</span>
+			  </h1>
+			  
+		   </span>
+		   </div>
+		   <div class="wrap-input2 validate-input" id="form01">
+		 
+
+			  <div   id="cloudplatform">
+				 <label for="platform" style="width:auto ;">Select a Cloud Platform:</label>
+				 <select class="form-control" id="platform" style="width:370px;">
+					<option value="none"> </option>
+					<option value="aws">AWS</option>
+					<option value="azure">Azure</option>
+				 </select>
+				 <br><br>
+
+				 <div   id="awsForm">
+					<label  for="code">Request Type</label>
+					<select id="code" name="code">
+					  <option value="none"></option>
+					   <option value="0001">Create RG</option>
+					   <option value="0002">Create VM</option>
+					   <option value="0003">Create VNet</option>
+					   <option value="0004">Create Storage</option>
+					   <option value="0005">Create Database</option>
+					   <option value="0006">Grant Access</option>
+					</select>
+					<br>  
+					<div  id="code01">
+					   <label   for="region01">Region</label>
+					   <select id="region01">
+						  <option value="us-east-1">North Europe</option>
+						  <option value="us-east-1">West Europe</option>
+					   </select>
+					   <br> 
+					   <label   for="RG01">RG</label> 
+					   <input type="text" id="RG01" name="RG02" value=""   ><br>
+					   <label   for="Owner">Owner</label> 
+					   <input type="text" id="Owner" name="Owner" value=""><br>
+					   <label  for="CC01">Cost Center</label> 
+					   <input type="text" id="CC01" name="CC01" value=""><br>
+					   <label   for="CF01">Code Flow</label> 
+					   <input type="text" id="CF01" name="CF01" value=""><br><br>
+					   <!--  <label for="email">Email:</label> -->
+					   <!-- <input type="email" id="email" name="email"><br><br> -->
+					   <br><br>
+					   <label    for="date01">Required by</label>
+					   <input   type="date" id="date01" name="date01"><br><br>
+					   <label for="comments">Description</label>
+					   <textarea class="form-control" id="Description01" rows="3"></textarea>
+					   <br> 
+					  
+					</div>
+
+					<div   id="code02">
+						<label   for="region02">Region</label>
+						<select id="region02">
+						   <option value="us-east-1">North Europe</option>
+						   <option value="us-east-1">West Europe</option>
+						</select>
+						<br> 
+						<label  for="RG02">RG</label> 
+						<input type="text" id="RG02" name="RG02" value=""><br>
+						<label style="color:rgb(15, 15, 15);" for="VM02">VM</label> 
+						<input type="text" id="VM02" name="VM02" value=""><br><br>
+						<!--  <label for="email">Email:</label> -->
+						<!-- <input type="email" id="email" name="email"><br><br> -->
+						<label    for="date02">Required by</label>
+						<input   type="date" id="date0" name="date0"><br><br>
+						<label for="comments">Description</label>
+						<textarea class="form-control" id="Description02" rows="3"></textarea>
+						<br> 
+						 
+					 </div>
+					 <div   id="code03">
+						<label style="color:rgb(15, 15, 15);" for="region03">Region</label>
+						<select id="region03" name="region03">
+						   <option value="us-east-1">North Europe</option>
+						   <option value="us-east-1">West Europe</option>
+						</select>
+						<br> 
+						<label style="color:rgb(15, 15, 15);" for="RG03">RG</label> 
+						<input type="text" id="RG03" name="RG03" value="" ><br>
+						<label style="color:rgb(15, 15, 15);" for="VPC03">VPC</label> 
+						<input type="text" id="VPC03" name="VPC03" value="" ><br>
+						<label style="color:rgb(15, 15, 15);" for="Cidr03">CIDR</label>
+						<input type="text" id="Cidr03" name="Cidr03" value="" ><br><br>  
+						<!--  <label for="email">Email:</label> -->
+						<!-- <input type="email" id="email" name="email"><br><br> -->
+						<br><br>
+						<label   style="color:rgb(15, 15, 15);" for="date03">Required by</label>
+						<input   type="date" id="date03" name="date03"><br><br>
+						<label for="comments">Description</label>
+						<textarea class="form-control" id="Description03" rows="3"></textarea>
+						<br> 
+					 </div>
+					 <div   id="code04">
+						<label style="color:rgb(15, 15, 15);" for="region04">Region</label>
+						<select id="region04">
+						   <option value="us-east-1">North Europe</option>
+						   <option value="us-east-1">West Europe</option>
+						</select>
+						<br> 
+						<label style="color:rgb(15, 15, 15);" for="RG04">RG</label> 
+						<input type="text" id="RG04" name="RG04" value=""><br>
+						<label style="color:rgb(15, 15, 15);" for=Bucket04">Bucket</label>
+						<input type="text" id="Bucket04" name="Bucket04"><br><br>
+						<!--  <label for="email">Email:</label> -->
+						<!-- <input type="email" id="email" name="email"><br><br> -->
+						<label   style="color:rgb(15, 15, 15);" for="date04">Required by</label>
+						<input   type="date" id="date04" name="date04"><br><br>
+						<label for="comments">Description</label>
+						<textarea class="form-control" id="Description04" rows="3"></textarea>
+						<br> 
+					 </div>
+					 </div>
+					 
+						 
+					 
+					 
+					  
+					 <div id="azForm">
+						<label  for="azcode">Request Type</label>
+						<select id="azcode" name="azcode">
+							<option value="none"></option>
+						   <option value="0001">Create RG</option>
+						   <option value="0002"> Create VM</option>
+						   <option value="0003">Create VNet</option>
+						   <option value="0004">Create Storage</option>
+						   <option value="0005">Create Database</option>
+						   <option value="0006">Grant Access</option>
+						</select>
+						<br>  
+						
+						<div  id="azcode01">
+						   <label   for="azregion01">Region</label>
+						   <select id="azregion01">
+							  <option value="us-east-1">North Europe</option>
+							  <option value="us-east-1">West Europe</option>
+						   </select>
+						   <br> 
+						   <label   for="azRG01">RG</label> 
+						   <input type="text" id="azRG01" name="azRG01" value=""   ><br>
+						   <label   for="azowner">Owner</label> 
+						   <input type="text" id="azowner" name="azowner" value=""><br>
+						   <label  for="azCC01">Cost Center</label> 
+						   <input type="text" id="azCC01" name="azCC01" value=""><br>
+						   <label   for="CF01">Code Flow</label> 
+						   <input type="text" id="azCF01" name="azCF01" value=""><br><br>
+						   <!--  <label for="email">Email:</label> -->
+						   <!-- <input type="email" id="email" name="email"><br><br> -->
+						   <br><br>
+						   <label    for="azdate01">Required by</label>
+						   <input   type="date" id="azdate01" name="azdate01"><br><br>
+						   <label for="azdescription01">Description:</label>
+						   <textarea class="form-control" id="azdescription01" rows="3"></textarea>
+						   <br> 
+						</div>
+						<div   id="azcode02">
+						   <label   for="azregion02">Region</label>
+						   <select id="azregion02">
+							  <option value="us-east-1">North Europe</option>
+							  <option value="us-east-1">West Europe</option>
+						   </select>
+						   <br> 
+						   <label  for="azRG02">RG</label> 
+						   <input type="text" id="azRG02" name="azRG02" value=""   ><br>
+						   <label style="color:rgb(15, 15, 15);" for="azVM02">VM</label> 
+						   <input type="text" id="azVM02" name="azVM02" value=""><br> 
+						   <label style="color:rgb(15, 15, 15);" for="azemail02">Requester Email</label> 
+						   <input type="text" id="azemail02" name="azemail2" value=""><br><br>
+						   <label    for="azdate02">Required by</label>
+						   <input   type="date" id="azdate02" name="azdate02"><br><br>
+						   <label for="azdescription02">Description</label>
+						   <textarea class="form-control" id="azdescription02" rows="3"></textarea>
+						   <br> 
+						</div>
+						<div   id="azcode03">
+						   <label style="color:rgb(15, 15, 15);" for="azregion03">Region</label>
+						   <select id="azregion03" name="azregion03">
+							  <option value="us-east-1">North Europe</option>
+							  <option value="us-east-1">West Europe</option>
+						   </select>
+						   <br> 
+						   <label style="color:rgb(15, 15, 15);" for="azRG03">RG</label> 
+						   <input type="text" id="azRG03" name="azRG03" value="" ><br>
+						   <label style="color:rgb(15, 15, 15);" for="azVNet03">VNet</label> 
+						   <input type="text" id="azVNet03" name="azVNet03" value="" ><br>
+						   <label style="color:rgb(15, 15, 15);" for="azCidr03">CIDR</label>
+						   <input type="text" id="azCidr03" name="azCidr03" value="" ><br><br>  
+						   <!--  <label for="email">Email:</label> -->
+						   <!-- <input type="email" id="email" name="email"><br><br> -->
+						   <br><br>
+						   <label   style="color:rgb(15, 15, 15);" for="azdate03">Required by</label>
+						   <input   type="date" id="azdate03" name="azdate03"><br><br>
+						   <label for="azdescription03">Description</label>
+						   <textarea class="form-control" id="azdescription03" rows="3"></textarea>
+						   <br><br>
+						   <br> 
+						</div>
+						<div   id="azcode04">
+						   <label style="color:rgb(15, 15, 15);" for="azregion04">Region</label>
+						   <select id="azregion04">
+							  <option value="us-east-1">North Europe</option>
+							  <option value="us-east-1">West Europe</option>
+						   </select>
+						   <br> 
+						   <label style="color:rgb(15, 15, 15);" for="azRG04">RG</label> 
+						   <input type="text" id="azRG04" name="azRG04" value=""><br>
+						   <label style="color:rgb(15, 15, 15);" for="azstorageaccount04">Storage Account</label>
+						   <input type="text" id="azstorageaccount04" name="azstorageaccount04"><br><br>
+						   <!--  <label for="email">Email:</label> -->
+						   <!-- <input type="email" id="email" name="email"><br><br> -->
+						   <label   style="color:rgb(15, 15, 15);" for="azdate04">Required by</label>
+						   <input   type="date" id="azdate04" name="azdate04"><br><br>
+						   <label for="azdescription04">Description</label>
+						   <textarea class="form-control" id="azdescription04" rows="3"></textarea>
+						   <br> 
+						</div>
+						<div   id="azcode05">
+							<label style="color:rgb(15, 15, 15);" for="azregion05">Region</label>
+							<select id="azregion05">
+							   <option value="us-east-1">North Europe</option>
+							   <option value="us-east-1">West Europe</option>
+							</select>
+							<br> 
+							<label style="color:rgb(15, 15, 15);" for="azRG05">RG</label> 
+							<input type="text" id="azRG05" name="azRG04" value=""><br>
+							<label style="color:rgb(15, 15, 15);" for="azsqlserver05">SQL Server</label>
+							<input type="text" id="azsqlserver05" name="azsqlserver05"><br>
+							<label style="color:rgb(15, 15, 15);" for="azdatabase05">Database Name</label>
+							<input type="text" id="azdatabase05" name="azdatabase05"><br><br>
+							<!--  <label for="email">Email:</label> -->
+							<!-- <input type="email" id="email" name="email"><br><br> -->
+							<label   style="color:rgb(15, 15, 15);" for="azdate05">Required by</label>
+							<input   type="date" id="azdate04" name="azdate05"><br><br>
+							<label for="azdescription05">Description</label>
+							<textarea class="form-control" id="azdescription05" rows="3"></textarea>
+							<br> 
+						 </div>
+						 <div   id="azcode06">
+							<label style="color:rgb(15, 15, 15);" for="azregion06">Region</label>
+							<select id="azregion06">
+							   <option value="us-east-1">North Europe</option>
+							   <option value="us-east-1">West Europe</option>
+							</select>
+							<br> 
+							<label style="color:rgb(15, 15, 15);" for="azRG06">RG</label> 
+							<input type="text" id="azRG06" name="azRG06" value=""><br>
+							<label style="color:rgb(15, 15, 15);" for=azADgroup06">AD Group</label>
+							<input type="text" id="azADgroup06" name="azADgroup06"><br><br>
+							<!--  <label for="email">Email:</label> -->
+							<!-- <input type="email" id="email" name="email"><br><br> -->
+							<label   style="color:rgb(15, 15, 15);" for="azdate06">Required by</label>
+							<input   type="date" id="azdate04" name="azdate06"><br><br>
+							<label for="azdescription06">Description</label>
+							<textarea class="form-control" id="azdescription06" rows="3"></textarea>
+							<br> 
+						 </div>
+					 </div>
+					 <div   id="costForm">
+						<label  for="cost">Cost File</label>
+						<select id="cost" name="cost">
+							<option value="none"></option>
+							<option value="No">No</option>
+							<option value="Yes">Yes</option>
+						</select>
+						<br>  
+						
+					</div>
+						<div id="filecostForm">    
+							<label  for="cost">Cost File</label>
+							<input type="file" id="input" accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"></input>
+							<div   id="result"></div>
+							<br> 
+							<table   id="grid1"></table>
+						</div>
+					 
+					
+					<br> 
+					<div id="buttonForm" class="container-contact2-form-btn">
+					 <div class="wrap-contact2-form-btn">
+						<div class="contact2-form-bgbtn"></div>
+						<button class="contact2-form-btn" type="button" onclick="submitClick()">Submit</button>
+					 </div>
+					</div>
+					 </div>
+					
+				 </div>
+				 
+			  </div>
+		</form>
+
+		</div>
+	 </div>
+	 	
+ </div>
+ 
+ 
+
+
+ <svg class="chat-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" xml:space="preserve">
+	<g class="chat">
+		<path class="chat-bg" fill-rule="evenodd" clip-rule="evenodd" fill="#004f9f" d="M133.295,67.352h345.409c36.27,0,65.942,29.674,65.942,65.939
+			v345.415c0,36.268-29.673,65.941-65.942,65.941H133.295c-36.269,0-65.942-29.674-65.942-65.941V133.292
+			C67.353,97.026,97.026,67.352,133.295,67.352z"/>
+			<a href="#contact3">Contact Us</a>
+		 
+		<g class="baloon">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M259.333,183.868H463.53c21.441,0,38.983,11.768,38.983,26.147
+				v136.968c0,14.382-17.542,26.148-38.983,26.148H259.333c-21.441,0-38.983-11.767-38.983-26.148V210.016
+				C220.35,195.636,237.892,183.868,259.333,183.868z M415.667,417.6l48.25-44.468h-33.75L415.667,417.6z"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#ED9C5C" cx="293.5" cy="278.5" r="18.5"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#ED9C5C" cx="359.311" cy="278.5" r="18.5"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#ED9C5C" cx="427.5" cy="278.5" r="18.5"/>
+		</g>
+	</g>
+	
+</svg>
+<a id="chat" target="_blank" href="https://teams.microsoft.com/l/chat/0/0?users=sachin_katari@bat.com,prakash_kowluri_jai@bat.com,minanatha_sivan_subramaniam@bat.com,saleh_albananh_saleh_ahmed@bat.com&topicName=Multi%20Cloud%20Platform%20Support&message=Hi">LiveChat<a>
+	<a id="chat2" >© 2021 British American Tobacco Malaysia. All Rights Reserved.<a>
+		<a id="chat3" >|||||||||||||||||||||||||||||||||||||||||||||||||||||||<a></a>
+	 <div class="content">
+		 
+		  <h1 class="ml11">
+			<span class="text-wrapper">
+			  <span class="line line1"></span>
+			  <span class="letters">BAT Cloud Automation</span>
+			</span>
+		  </h1>
+		
+		
+	 </div>
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="hide-show-fields-form.js"></script>
+<!--===============================================================================================-->
+	 
+<!--===============================================================================================-->
+ 
+ 
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/main02.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,924 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main02.css">
+<!--===============================================================================================-->
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="hide-show-fields-form.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+ 
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  
+    <script src="https://igniteui.com/js/modernizr.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/infragistics.core.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/infragistics.lob.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_core.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collections.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_text.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_io.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_ui.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.documents.core_core.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collectionsextended.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.excel_core.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_threading.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_web.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.xml.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.documents.core_openxml.js"></script>
+  <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.excel_serialization_openxml.js"></script>
+  <link href="https://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+  <link href="https://cdn-na.infragistics.com/igniteui/latest/css/structure/infragistics.css" rel="stylesheet"></link>
+  <script src="cost.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+  <style>
+
+  body {
+	background-color: black;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	color: gray;
+  }
+  
+  h1 {
+	font-family: Georgia, serif;
+	font-size: 60px;
+	color: white;
+  }
+
+
+ 
+    #sampleContainer ol {
+        padding: 0px 0px 0px 15px;
+        margin: 0;
+    }
+
+    #sampleContainer input {
+        margin: 10px 0;
+    }
+
+    #result {
+        display: none;
+        color: red;
+    }
+</style>
+
+ 
+
+  
+      
+<style>
+  label.ex1 {
+    margin-left: 50px;
+  }
+</style> 
+  
+  <style>
+    list.ex1 {
+      margin-left: 50px;
+    }
+</style> 
+  
+  
+ 
+
+  <style>
+   
+    
+ 
+#grid4 {
+   
+  height: 100px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px;
+}
+
+#item1 {
+  background-color: lime;
+}
+
+#item2 {
+  background-color: yellow;
+  grid-column: 2 / 4;
+}
+
+#item3 {
+  background-color: blue;
+  grid-column: span 2 / 7;
+}
+</style>
+<style>
+	ul {
+		 
+		position: -webkit-sticky;
+     position: sticky;
+    
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  opacity: 1.5;
+ 
+
+	   
+ 		height: 40px;
+  		width: 100%;
+  		display: block;
+  		background: linear-gradient(90deg, #0e2b63 30.4785%, rgba(0, 0, 0, 0) 30.4785%), 
+              linear-gradient(90deg, #004f9f 52.15788%, rgba(0, 0, 0, 0) 52.15788%), 
+              linear-gradient(90deg, hsl(219, 100%, 46%) 64.72807%, rgba(0, 0, 0, 0) 64.72807%), 
+              linear-gradient(90deg, #ef7d00 73.22551%, rgba(0, 0, 0, 0) 73.22551%), 
+              linear-gradient(90deg, #ffbb00 79.62792%, rgba(0, 0, 0, 0) 79.62792%), 
+              linear-gradient(90deg, #50af47 86.69237%, rgba(0, 0, 0, 0) 86.69237%), 
+              linear-gradient(90deg, #afca0b 92.0305%, rgba(0, 0, 0, 0) 92.0305%), 
+              linear-gradient(90deg, #5a328a 97.0083%, rgba(0, 0, 0, 0) 97.0083%), 
+              linear-gradient(90deg, #e72582 100%, rgba(0, 0, 0, 0) 100%);
+  
+  		top: 0px;
+  		left: 0px;
+	}
+	
+	 
+ 
+	
+	li {
+	  float: left;
+	}
+	
+	li a {
+	  display: block;
+	  color: rgb(255, 255, 255);
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+	}
+	
+	li a:hover {
+	  background-color: #ffffff;
+	  color: rgb(12, 12, 12);
+	}
+	a.active {
+	  background-color: #0b0c0b;
+	  color: white;
+</style>
+
+
+   <style>
+	.ml11 {
+	  font-weight: 700;
+	  font-size: 2.0em;
+	}
+	
+	.ml11 .text-wrapper {
+	  position: relative;
+	  display: inline-block;
+	  padding-top: 0.1em;
+	  padding-right: 0.05em;
+	  padding-bottom: 0.15em;
+	}
+	
+	.ml11 .line {
+	  opacity: 0;
+	  position: absolute;
+	  left: 0;
+	  height: 100%;
+	  width: 3px;
+	  background-color: #fff;
+	  transform-origin: 0 50%;
+	}
+	
+	.ml11 .line1 { 
+	  top: 0; 
+	  left: 0;
+	}
+	
+	.ml11 .letter {
+	  display: inline-block;
+	  line-height: 1em;
+	}
+	</style>
+
+<style>
+	 
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	.topnav a.active {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	</style>
+	<style>
+		#snackbar {
+		  visibility: hidden;
+		  min-width: 250px;
+		  margin-left: -125px;
+		  background-color: #333;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 2px;
+		  padding: 16px;
+		  position: fixed;
+		  z-index: 1;
+		  left: 50%;
+		  bottom: 30px;
+		  font-size: 17px;
+		}
+		
+		#snackbar.show {
+		  visibility: visible;
+		  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+		
+		@-webkit-keyframes fadein {
+		  from {bottom: 0; opacity: 0;} 
+		  to {bottom: 30px; opacity: 1;}
+		}
+		
+		@keyframes fadein {
+		  from {bottom: 0; opacity: 0;}
+		  to {bottom: 30px; opacity: 1;}
+		}
+		
+		@-webkit-keyframes fadeout {
+		  from {bottom: 30px; opacity: 1;} 
+		  to {bottom: 0; opacity: 0;}
+		}
+		
+		@keyframes fadeout {
+		  from {bottom: 30px; opacity: 1;}
+		  to {bottom: 0; opacity: 0;}
+		}
+		</style>
+
+
+
+
+ 
+ 
+<ul id="head012">
+  <li><a  class="active" href="#home"><b>Home</b></a></li>
+  <li><a href="#news"><b>Cloud Services</b></a></li>
+  <li><a href="#contact"><b>Contact Us</b></a></li>
+  <li><a href="#about" onclick=redirectFunction()"><b>About Team</b></a></li>
+   
+</ul>
+<br> 
+<img src="icon.png" align="right" style="color:rgb(242, 244, 248);" alt="Trulli"  >
+</head>
+<body>
+
+	<div id="overlay" ">
+		<div id="loader"></div>
+		<div style="display:none;" id="myDiv"  >
+			<h2>Done!</h2>
+			<p22  id="SuccessStatus" style="background-color: black;">Your request submitted successfully!</p22>
+   
+		  </div>
+	
+	   </div>
+		
+	   
+	   
+	 
+	   <div style="padding:20px">
+		<h2>Overlay with Text</h2>
+		<button onclick="on()">Turn on overlay effect</button>
+	   </div>
+
+	<div class="bg-contact2" style="background-image: url('images/16.JPG');">
+
+		
+		
+
+
+
+
+
+
+ 
+		<div class="container-contact2">
+			<div class="wrap-contact2" id="wrap"
+				<form class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						Request Cloud here!
+					</span>
+
+					
+				
+                <div class="wrap-input2 validate-input" id="form01">
+					<div id="snackbar">Some text some message..</div>
+		
+	<form  >
+
+		
+						<!--<div class="form-group">
+						  <label for="name">Name</label>
+						  <input type="text" class="form-control" id="name" placeholder="Joe Smith">
+						</div>-->
+					  
+	<!--<div class="form-group">
+	  <label for="name">Name</label>
+	  <input type="text" class="form-control" id="name" placeholder="Joe Smith">
+	</div>-->
+  
+  
+	
+  
+  
+  
+	<div   id="cloudplatform">
+	  <label for="platform"><b>Select a Cloud Platform:</b></label>
+	  <select class="form-control" id="platform">
+			<option value="none"> </option>
+			<option value="aws"><b>AWS</b></option>
+			<option value="azure"><b>Azure</b></option>
+	  </select>
+	  <br><br>
+  
+  
+  
+   <div   id="awsForm">
+  
+	  <label  for="code"><b>Change Request:</b></label>
+	 
+	  <select id="code" name="code"> 
+	   <option value="0001"><b>Resource Group</b></option>
+	   <option value="0002"><b>Create VM</b></option>
+	   <option value="0003"><b>Create VNet</b></option>
+	   <option value="0004"><b>Create Storage</b></option>
+	   <option value="0005"><b>Create Database</b></option>
+	   <option value="0006"><b>Grant RBAC</b></option>
+	 </select><br>  
+  
+	  <!--<select id="RequestCode" class="form-control"  >
+		<option value="0001">0001</option>
+		<option value="0002">0002</option>
+		<option value="0003">0003</option>
+		<option value="0004">0004</option>
+		<option value="0005">0005</option>
+	  </select><br> -->
+	 
+	
+  
+  
+  
+	<div >
+	  <!--<label for="seeAnotherFieldGroup">Change Request:</label>
+	  <select class="form-control" id="seeAnotherFieldGroup22">
+			<option value="no">Not Particularly.</option>
+			<option value="yes">I Guess!</option>
+	  </select>-->
+	</div>
+  
+	<div  id="code01">
+  
+	  
+	  <label   for="region01"><b>Region:</b></label>
+		
+	   <select id="region01">
+		<option value="us-east-1">North Europe</option>
+		<option value="us-east-1">West Europe</option>
+	  </select><br> 
+	 
+   
+	   <label   for=""RG01"><b>RG:</b></label> 
+	   <input type="text" id="RG01" name="RG02" value=""   ><br>
+	   <label   for="Owner"><b>Owner:</b></label> 
+	   <input type="text" id="Owner" name="Owner" value=""><br>
+	   <label  for="CC01"><b>Cost Center:</b></label> 
+	   <input type="text" id="CC01" name="CC01" value=""><br>
+	   <label   for="CF01"><b>Code Flow:</b></label> 
+	   <input type="text" id="CF01" name="CF01" value=""><br><br>
+		
+	   
+	   <!--  <label for="email">Email:</label> -->
+	   <!-- <input type="email" id="email" name="email"><br><br> -->
+	   
+	  
+	   
+	 <br><br>
+	   <label    for="date01"><b>Required by:</b></label>
+	   <input   type="date" id="date01" name="date01"><br><br>
+	  
+	   <label for="comments"><b>Description</b>:</label>
+	   <textarea class="form-control" id="Description01" rows="3"></textarea>
+	   <br> 
+	  
+	   <button type="button" onclick="myFunction01()">Submit</button><br><br>
+	   
+	 </div>
+  
+  
+  
+	<div   id="code02">
+  
+	  
+	 <label   for="region02">Region:</label>
+	   
+	  <select id="region02">
+	   <option value="us-east-1">North Europe</option>
+	   <option value="us-east-1">West Europe</option>
+	 </select><br> 
+	
+  
+	  <label  for=""RG02">RG:</label> 
+	  <input type="text" id="RG02" name="RG02" value=""   ><br>
+	  <label style="color:rgb(15, 15, 15);" for="VM02">VM:</label> 
+	  <input type="text" id="VM02" name="VM02" value=""><br><br>
+	   
+	   
+	  <!--  <label for="email">Email:</label> -->
+	  <!-- <input type="email" id="email" name="email"><br><br> -->
+	  
+	  
+  
+	  <label    for="date02">Required by:</label>
+	  <input   type="date" id="date0" name="date0"><br><br>
+	 
+	  <label for="comments">Description:</label>
+	  <textarea class="form-control" id="Description02" rows="3"></textarea>
+	  <br> 
+	 
+	  <button type="button" onclick="myFunction02()">Submit</button><br><br>
+	 
+	</div>
+	 
+  
+  
+  
+  
+  
+  
+  
+  
+	<div   id="code03">
+  
+	   
+	 <label style="color:rgb(15, 15, 15);" for="region03">Region:</label>
+	  <select id="region03" name="region03">
+	   <option value="us-east-1">North Europe</option>
+	   <option value="us-east-1">West Europe</option>
+	 </select><br> 
+  
+	  <label style="color:rgb(15, 15, 15);" for="RG03">RG:</label> 
+	  <input type="text" id="RG03" name="RG03" value="" ><br>
+	  <label style="color:rgb(15, 15, 15);" for="VPC03">VPC:</label> 
+	  <input type="text" id="VPC03" name="VPC03" value="" ><br>
+	  <label style="color:rgb(15, 15, 15);" for="Cidr03">CIDR:</label>
+	  <input type="text" id="Cidr03" name="Cidr03" value="" ><br><br>  
+	 
+	   
+	  <!--  <label for="email">Email:</label> -->
+	  <!-- <input type="email" id="email" name="email"><br><br> -->
+	  
+   
+	  
+   
+	 
+  <br><br>
+  <label   style="color:rgb(15, 15, 15);" for="date03">Required by:</label>
+  <input   type="date" id="date03" name="date03"><br><br>
+	  <label for="comments">Description</label>
+	  <textarea class="form-control" id="Description03" rows="3"></textarea>
+	  <br><br>
+	 
+	  <button type="button" onclick="myFunction03()">Submit</button><br><br>
+	 
+	</div>
+  
+  
+  
+  
+  
+  
+  
+	<div   id="code04">
+  
+	   
+	  <label style="color:rgb(15, 15, 15);" for="region04">Region:</label>
+		
+	   <select id="region04">
+		<option value="us-east-1">North Europe</option>
+		<option value="us-east-1">West Europe</option>
+	  </select><br> 
+	 
+   
+	   <label style="color:rgb(15, 15, 15);" for="RG04">RG:</label> 
+	   <input type="text" id="RG04" name="RG04" value=""><br>
+  
+	   <label style="color:rgb(15, 15, 15);" for=Bucket04">Bucket:</label>
+	   <input type="text" id="Bucket04" name="Bucket04"><br><br>
+	   
+	   <!--  <label for="email">Email:</label> -->
+	   <!-- <input type="email" id="email" name="email"><br><br> -->
+	   
+	 
+	 
+	  
+	   <label   style="color:rgb(15, 15, 15);" for="date04">Required by:</label>
+		<input   type="date" id="date04" name="date04"><br><br>
+	  
+	   <label for="comments">Description</label>
+	   <textarea class="form-control" id="Description04" rows="3"></textarea>
+	   <br><br>
+	   <button type="button" onclick="myFunction04()">Submit</button><br><br>
+  
+  
+  
+   
+	  
+	 </div>
+	</div>
+  
+  
+	 
+	<div   id="awscostForm">  
+  
+	  <label   for="file"><b>Cost File:</b></label>
+	   <input    type="file" id="input" accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"></input>
+	   <br><br>
+	   <div style="text-align:right;" id="result"></div>
+	   <table style="text-align:right;" id="grid1"></table>
+	   <div style="text-align:right;" id="result2"></div>
+	   <table style="text-align:right;" id="grid2"></table>
+	 
+   <br><br>
+	<!--<input type="checkbox" id="agree" name="agree" value="agree">
+	<label for="agree"> I read and agree.</label><br>
+	 <button type="button" onclick="myFunction01()">Submit</button><br><br>-->
+   <!-- < input type="submit" value="Submit"> -->
+  
+  <p   align="right"><a href="https://teams.microsoft.com/l/chat/0/0?users=sachin_katari@bat.com,prakash_kowluri_jai@bat.com,minanatha_sivan_subramaniam@bat.com,saleh_albananh_saleh_ahmed@bat.com&topicName=MultiCloudPlatformSupport&message=Hi"><b>For help, JaiChat!</b></a></p>
+  
+  </div>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div   id="azForm">
+  
+	<label  for="azcode"><b>Change Request:</b></label>
+   
+	<select id="azcode" name="azcode"> 
+	 <option value="0001"><b>Resource Group</b></option>
+	 <option value="0002"> <b>Create VM</b></option>
+	 <option value="0003"><b>Create VNet</b></option>
+	 <option value="0004"><b>Create Storage</b></option>
+	 <option value="0005"><b>Create Database</b></option>
+	 <option value="0006"><b>Grant RBAC</b></option>
+   </select><br>  
+
+	<!--<select id="RequestCode" class="form-control"  >
+	  <option value="0001">0001</option>
+	  <option value="0002">0002</option>
+	  <option value="0003">0003</option>
+	  <option value="0004">0004</option>
+	  <option value="0005">0005</option>
+	</select><br> -->
+   
+  
+
+
+
+  <div >
+	<!--<label for="seeAnotherFieldGroup">Change Request:</label>
+	<select class="form-control" id="seeAnotherFieldGroup22">
+		  <option value="no">Not Particularly.</option>
+		  <option value="yes">I Guess!</option>
+	</select>-->
+  </div>
+
+  <div  id="azcode01">
+
+	
+	<label   for="azRegion01"><b>Region:</b></label>
+	  
+	 <select id="azRegion01">
+	  <option value="us-east-1">North Europe</option>
+	  <option value="us-east-1">West Europe</option>
+	</select><br> 
+   
+ 
+	 <label   for="azRG01"><b>RG:</b></label> 
+	 <input type="text" id="azRG01" name="azRG01" value=""   ><br>
+	 <label   for="azOwner"><b>Owner:</b></label> 
+	 <input type="text" id="azOwner" name="azOwner" value=""><br>
+	 <label  for="azCC01"><b>Cost Center:</b></label> 
+	 <input type="text" id="azCC01" name="azCC01" value=""><br>
+	 <label   for="CF01"><b>Code Flow:</b></label> 
+	 <input type="text" id="azCF01" name="azCF01" value=""><br><br>
+	  
+	 
+	 <!--  <label for="email">Email:</label> -->
+	 <!-- <input type="email" id="email" name="email"><br><br> -->
+	 
+	
+	 
+   <br><br>
+	 <label    for="azdate01"><b>Required by:</b></label>
+	 <input   type="date" id="azdate01" name="azdate01"><br><br>
+	
+	 <label for="azDescription01"><b>Description</b>:</label>
+	 <textarea class="form-control" id="azDescription01" rows="3"></textarea>
+	 <br> 
+	
+	 <button type="button" onclick="azmyFunction01()">Submit</button><br><br>
+	 
+   </div>
+
+
+
+  <div   id="azcode02">
+
+	
+   <label   for="azRegion02">Region:</label>
+	 
+	<select id="azRegion02">
+	 <option value="us-east-1">North Europe</option>
+	 <option value="us-east-1">West Europe</option>
+   </select><br> 
+  
+
+	<label  for=""azRG02">RG:</label> 
+	<input type="text" id="azRG02" name="azRG02" value=""   ><br>
+	<label style="color:rgb(15, 15, 15);" for="azVM02">VM:</label> 
+	<input type="text" id="azVM02" name="azVM02" value=""><br><br>
+	 
+	 
+	<!--  <label for="email">Email:</label> -->
+	<!-- <input type="email" id="email" name="email"><br><br> -->
+	
+	
+
+	<label    for="azdate02">Required by:</label>
+	<input   type="date" id="azdate02" name="azdate02"><br><br>
+   
+	<label for="azDescription02">Description:</label>
+	<textarea class="form-control" id="azDescription02" rows="3"></textarea>
+	<br> 
+   
+	<button type="button" onclick="azmyFunction02()">Submit</button><br><br>
+   
+  </div>
+   
+
+
+
+
+
+
+
+
+  <div   id="azcode03">
+
+	 
+   <label style="color:rgb(15, 15, 15);" for="azRegion03">Region:</label>
+	<select id="azRegion03" name="azRegion03">
+	 <option value="us-east-1">North Europe</option>
+	 <option value="us-east-1">West Europe</option>
+   </select><br> 
+
+	<label style="color:rgb(15, 15, 15);" for="azRG03">RG:</label> 
+	<input type="text" id="azRG03" name="azRG03" value="" ><br>
+	<label style="color:rgb(15, 15, 15);" for="azVPC03">VPC:</label> 
+	<input type="text" id="azVPC03" name="azVPC03" value="" ><br>
+	<label style="color:rgb(15, 15, 15);" for="azCidr03">CIDR:</label>
+	<input type="text" id="azCidr03" name="azCidr03" value="" ><br><br>  
+   
+	 
+	<!--  <label for="email">Email:</label> -->
+	<!-- <input type="email" id="email" name="email"><br><br> -->
+	
+ 
+	
+ 
+   
+<br><br>
+<label   style="color:rgb(15, 15, 15);" for="azdate03">Required by:</label>
+<input   type="date" id="azdate03" name="azdate03"><br><br>
+	<label for="azDescription03">Description</label>
+	<textarea class="form-control" id="azDescription03" rows="3"></textarea>
+	<br><br>
+   
+	<button type="button" onclick="azmyFunction03()">Submit</button><br><br>
+   
+  </div>
+
+
+
+
+
+
+
+  <div   id="azcode04">
+
+	 
+	<label style="color:rgb(15, 15, 15);" for="azRegion04">Region:</label>
+	  
+	 <select id="azRegion04">
+	  <option value="us-east-1">North Europe</option>
+	  <option value="us-east-1">West Europe</option>
+	</select><br> 
+   
+ 
+	 <label style="color:rgb(15, 15, 15);" for="azRG04">RG:</label> 
+	 <input type="text" id="azRG04" name="azRG04" value=""><br>
+
+	 <label style="color:rgb(15, 15, 15);" for=azBucket04">Bucket:</label>
+	 <input type="text" id="azBucket04" name="azBucket04"><br><br>
+	 
+	 <!--  <label for="email">Email:</label> -->
+	 <!-- <input type="email" id="email" name="email"><br><br> -->
+	 
+   
+   
+	
+	 <label   style="color:rgb(15, 15, 15);" for="azdate04">Required by:</label>
+	  <input   type="date" id="azdate04" name="azdate04"><br><br>
+	
+	 <label for="azDescription04">Description</label>
+	 <textarea class="form-control" id="azDescription04" rows="3"></textarea>
+	 <br><br>
+	 <button type="button" onclick="azmyFunction04()">Submit</button><br><br>
+
+
+
+ 
+	
+   </div>
+  </div>
+
+
+   
+  <div   id="azcostForm">  
+
+	<label   for="file"><b>Cost File:</b></label>
+	 <input    type="file" id="input" accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"></input>
+	 <br><br>
+	 <div style="text-align:right;" id="result"></div>
+	 <table style="text-align:right;" id="grid1"></table>
+	 <div style="text-align:right;" id="result2"></div>
+	 <table style="text-align:right;" id="grid2"></table>
+   
+ <br><br>
+  <!--<input type="checkbox" id="agree" name="agree" value="agree">
+  <label for="agree"> I read and agree.</label><br>
+   <button type="button" onclick="myFunction01()">Submit</button><br><br>-->
+ <!-- < input type="submit" value="Submit"> -->
+
+<p   align="right"><a href="https://teams.microsoft.com/l/chat/0/0?users=sachin_katari@bat.com,prakash_kowluri_jai@bat.com,minanatha_sivan_subramaniam@bat.com,saleh_albananh_saleh_ahmed@bat.com&topicName=MultiCloudPlatformSupport&message=Hi"><b>For help, JaiChat!</b></a></p>
+
+</div>
+
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+<div class="container-contact2-form-btn">
+	<div class="wrap-contact2-form-btn">
+		<div class="contact2-form-bgbtn"></div>
+		<button class="contact2-form-btn">
+			Send Your Message
+		</button>
+	</div>
+</div>
+  
+  
+  </form>
+  
+  
+
+					</div>
+					
+					
+				</form>
+			</div>
+		</div>
+ 
+	</div>
+
+	
+	
+
+
+	<div class="footer">
+		<h1></h1>
+		<!--<video autoplay muted loop class="bg-contact2" id="myVideo">
+			<source src="clouds.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video>-->
+		  <h1 class="ml11">
+			<span class="text-wrapper">
+			  <span class="line line1"></span>
+			  <span class="letters">BAT Cloud Automation</span>
+			</span>
+		  </h1>
+		  
+		
+ 
+	  </div>
+	 
+
+	<script src="hide-show-fields-form.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/main02.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+
+</html>
